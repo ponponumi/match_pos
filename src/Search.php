@@ -31,4 +31,9 @@ class Search{
 
     return $result;
   }
+
+  public static function multibyte(string $text,array $list){
+    // マルチバイトで取得する
+    return self::core($text,$list);
+  }
 }
