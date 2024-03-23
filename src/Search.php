@@ -36,4 +36,9 @@ class Search{
     // マルチバイトで取得する
     return self::core($text,$list);
   }
+
+  public static function singlebyte(string $text,array $list){
+    // シングルバイトで取得する
+    return self::core($text,$list,false);
+  }
 }
